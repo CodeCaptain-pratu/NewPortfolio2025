@@ -7,13 +7,13 @@ theme.addEventListener("click",()=>{
     if(dark){
         body.classList.add("light");
         body.classList.remove("dark");
-        theme.innerHTML="🌜";
+        theme.innerHTML=`<i class="ri-moon-line"></i>`;
         dark=false;
     }
     else{
         body.classList.add("dark");
         body.classList.remove("light");
-        theme.innerHTML="🌞";
+        theme.innerHTML=`<i class="ri-sun-line"></i>`;
         dark=true;
     }
 })

@@ -135,6 +135,7 @@ nav .icons{
         z-index: 10;
         border-radius: 50px;
         gap:2rem;
+        opacity: 0.9;
         border:1px solid #3A81F5;
     }
 
@@ -156,15 +157,16 @@ nav .icons{
     flex-direction: column;
     padding: 2rem;
     margin: auto;
-    gap:1rem;
+    gap:1.5rem;
 }
 .intro h1{
     font-size: 3rem;
 }
 .intro .introp{
     width: 50%; 
-    line-height:1.3; 
-    letter-spacing:1.2px;
+    line-height:1.4; 
+    letter-spacing:1.1px;
+    font-size: 1.2rem;
 }
 /* media queries for intro section */
 @media(max-width:768px){
@@ -191,7 +193,9 @@ nav .icons{
 }
 .about p{
     line-height:1.3; 
-    letter-spacing:1.2px;
+    letter-spacing:1px;
+    width:50%;
+    font-size: 1.1rem;
 }
 .about .ulContainer{
     display: flex;
@@ -209,4 +213,12 @@ nav .icons{
 }
 .about ul li{
     list-style: disc;
-} 
+}
+.color-disc li::marker{
+    color:#3A81F5;
+}
+@media(max-width:768px){
+    .about p{
+        width:100%;
+    }
+}

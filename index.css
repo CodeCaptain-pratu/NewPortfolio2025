@@ -44,7 +44,6 @@ a{
     place-items: center;
 }
 /* navbar */
-
 nav {
   width: 100%;
   height: 80px;
@@ -59,7 +58,6 @@ nav .name span{
     color: #3A81F5;
     cursor: pointer;
 }
-/* Links */
 nav .links {
   width: 70%;
   display: flex;
@@ -76,9 +74,8 @@ nav .links .link {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #fff;
+  color: #ddd;
 }
-/* Hover effect */
 nav .links .link:hover {
   background-color: rgba(128, 128, 128, 0.475);
 }
@@ -86,12 +83,9 @@ nav .links .link:hover i,
 nav .links .link:hover a {
   color: #3A81F5;
 }
-/* Active Link */
 .link.active {
   border: 1px solid #3A81F5;
 }
-
-/* Theme toggle */
 .theme {
   border-radius: 50%;
   padding: 6.5px;
@@ -99,23 +93,7 @@ nav .links .link:hover a {
   cursor: pointer;
   color: #3A81F5;
 }
-
-/* media queries for navbar */
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav {
-    gap: 0.5rem;
-    padding: 0 10px;
-  }
-  nav .links {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  nav .links .link a {
-    display: none;
-  }
-}
-
+/* Media queries for navbar */
 @media (max-width: 480px) {
   nav .name span{
     font-size: 1.2rem;
@@ -128,7 +106,23 @@ nav .links .link:hover a {
     display: none;
   }
 }
-
+@media (max-width: 768px) {
+  nav {
+    gap: 0.5rem;
+    padding: 0 10px;
+  }
+  nav .links {
+    gap: 1rem;
+  }
+  nav .links .link a {
+    display: none;
+  }
+}
+@media (max-width:1024px){
+    nav .links .link a{
+        display: none;
+    }
+}
 /* main section */
 .intro{
     /* border:2px solid red; */
@@ -146,7 +140,23 @@ nav .links .link:hover a {
 .intro h1{
     /* border:2px solid yellow; */
     font-size: 4rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#typingText {
+    /* border:2px solid red; */
+    display: inline-block;
+    min-width: 200px; /* किंवा किती space लागतो तितकं */
+    overflow: hidden;
+    white-space: nowrap;
+}
+#cursor {
+  color: #3A81F5;
+  font-size: 6rem;
+  font-weight: bold;
+  display: inline-block;
+  /* border:2px solid #ddd; */
 }
 .intro h3{
     /* border:2px solid red; */

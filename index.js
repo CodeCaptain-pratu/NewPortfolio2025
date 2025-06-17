@@ -18,7 +18,7 @@ theme.addEventListener("click",()=>{
     }
 })
 
-// 
+// active links 
 const links = document.querySelectorAll('.link');
 
 links.forEach(link => {
@@ -27,3 +27,22 @@ links.forEach(link => {
     link.classList.add('active');
   });
 });
+
+// typing animation 
+  gsap.registerPlugin(TextPlugin);
+    gsap.to("#typingText", {
+      duration: 2,
+      text:"Web Developer",
+      ease: "none",
+    });
+
+  // blinking cursor using GSAP (infinite loop)
+  gsap.to("#cursor", {
+    opacity: 0,
+    repeat: -1,
+    yoyo: true,
+    duration: 1,
+    ease: "power1.inOut"
+  });
+
+  typeNext();

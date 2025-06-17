@@ -117,6 +117,9 @@ nav .links .link:hover a {
 }
 
 @media (max-width: 480px) {
+  nav .name span{
+    font-size: 1.2rem;
+  }
   nav .links {
     gap: 0.5rem;
     padding: 0;

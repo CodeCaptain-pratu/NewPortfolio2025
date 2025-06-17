@@ -18,10 +18,12 @@ theme.addEventListener("click",()=>{
     }
 })
 
-// Logic for Hamburger 
-let hamburger = document.querySelector(".hamburger");
-let links = document.querySelector(".links");
+// 
+const links = document.querySelectorAll('.link');
 
-hamburger.addEventListener("click", () => {
-    links.classList.toggle("active");  
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+  });
 });

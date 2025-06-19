@@ -52,11 +52,13 @@ nav {
   align-items: center;
   background-color: black;
   padding: 0 1rem;
+  /* border:2px solid #fff; */
 }
 nav .name span{
     font-size: 1.5rem;
     color: #3A81F5;
     cursor: pointer;
+    /* border:2px solid yellow;  */
 }
 nav .links {
   width: 70%;
@@ -64,6 +66,7 @@ nav .links {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  /* border:2px solid red; */
 }
 nav .links .link {
   display: flex;
@@ -75,6 +78,7 @@ nav .links .link {
   cursor: pointer;
   transition: all 0.3s ease;
   color: #ddd;
+  /* border:2px solid green; */
 }
 nav .links .link:hover {
   background-color: rgba(128, 128, 128, 0.475);
@@ -100,7 +104,10 @@ nav .links .link:hover a {
   }
   nav .links {
     gap: 0.5rem;
-    padding: 0;
+  }
+  nav .links .link {
+    /* padding: 12px 10px; */
+    padding: 7px 5.5px;
   }
   nav .links .link a {
     display: none;
@@ -125,7 +132,7 @@ nav .links .link:hover a {
 }
 /* main section */
 .intro{
-    /* border:2px solid red; */
+    border:2px solid red;
     width:90%;
     height:100%;
     display: flex;
@@ -137,17 +144,19 @@ nav .links .link:hover a {
     padding: 2rem;
     margin-top: 1rem;
 }
+.intro .firstPara{
+    font-size: 1.7rem;
+}
 .intro h1{
-    /* border:2px solid yellow; */
+    border:2px solid yellow;
     font-size: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #typingText {
-    /* border:2px solid red; */
     display: inline-block;
-    min-width: 200px; /* किंवा किती space लागतो तितकं */
+    min-width: 200px;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -156,30 +165,61 @@ nav .links .link:hover a {
   font-size: 6rem;
   font-weight: bold;
   display: inline-block;
-  /* border:2px solid #ddd; */
 }
 .intro h3{
-    /* border:2px solid red; */
     font-size: 1.5rem;
 }
 .intro .introp{
-    /* border:2px solid green; */
     width: 100%; 
-    line-height:1.4; 
-    letter-spacing:1.1px;
+    line-height:1.4rem; 
+    letter-spacing:0.9px;
     font-size: 1.3rem;
     text-align: center;
 }
 /* media queries for intro section */
 @media(max-width:480px){
+    .intro h1{
+        font-size: 2rem;
+    }
+    #cursor {
+        font-size: 2rem;
+    }
+    .intro .firstPara{
+        font-size: 1rem;
+    }
+    .intro h3{
+        font-size: 1rem;
+    }
     .intro .introp{
         padding: 0;
+        font-size: 0.8rem;
+        line-height:1rem;
+    }
+    .btn{
+        font-size: 0.8rem;
     }
 }
 @media(max-width:768px){
+    .intro h1{
+        font-size: 3rem;
+    }
+    #cursor {
+        font-size: 3rem;
+    }
+    .intro .firstPara{
+        font-size: 1.2rem;
+    }
+    .intro h3{
+        font-size: 1.1rem;
+    }
     .intro .introp{
         width:100%;
         padding: 0;
+        font-size: 0.9rem;
+        line-height:1.1rem;
+    }
+    .btn{
+        font-size: 1rem;
     }
 }
 @media(max-width:1024px){

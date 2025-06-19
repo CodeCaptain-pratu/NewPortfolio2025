@@ -132,7 +132,7 @@ nav .links .link:hover a {
 }
 /* main section */
 .intro{
-    border:2px solid red;
+    /* border:2px solid red; */
     width:90%;
     height:100%;
     display: flex;
@@ -148,7 +148,7 @@ nav .links .link:hover a {
     font-size: 1.7rem;
 }
 .intro h1{
-    border:2px solid yellow;
+    /* border:2px solid yellow; */
     font-size: 4rem;
     display: flex;
     justify-content: center;

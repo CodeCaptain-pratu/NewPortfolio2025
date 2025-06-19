@@ -268,6 +268,14 @@ nav .links .link:hover a {
     border-radius: 20px;
     object-fit: cover;
 }
+@media(max-width:480px){
+    .about .img{
+        width:100%;
+    }
+    .about p{
+        font-size: 0.9rem;
+    }
+}
 @media(max-width:768px){
     .about{
         flex-direction: column;
@@ -280,11 +288,6 @@ nav .links .link:hover a {
     }
     .about .img img{
         border-radius: 100%;
-    }
-}
-@media(max-width:480px){
-    .about .img{
-        width:100%;
     }
 }
 /* project section */

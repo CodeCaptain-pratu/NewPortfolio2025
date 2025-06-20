@@ -320,6 +320,74 @@ nav .links .link:hover a {
 .socialLinks a:hover{
     transform: scale(1.5);
 }
+.hamburger{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3A81F5;
+    color:#fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+}
+.hamburger i{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+/* media queries for social links */
+@media(max-width:480px){
+    .hamburger{
+        display: block;
+        margin: 10px auto;
+        position: fixed;
+        bottom: 1%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .socialLinks{
+        display: none;
+    }
+    .socialLinks.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        gap: 10px;
+        z-index: 1000;
+    }
+}
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+        margin: 10px auto;
+        position: fixed;
+        bottom: 1%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .socialLinks{
+        display: none;
+    }
+    .socialLinks.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        gap: 10px;
+        z-index: 1000;
+    }
+}
 /* project section */
 .project {
     padding: 2rem;

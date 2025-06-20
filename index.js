@@ -45,4 +45,10 @@ links.forEach(link => {
     ease: "power1.inOut"
   });
 
-  typeNext();
+
+  // hamburger click event 
+  let hamburger=document.querySelector(".hamburger");
+  let socialLinks=document.querySelector(".socialLinks");
+  hamburger.addEventListener("click",()=>{
+   socialLinks.classList.toggle('active');
+})

@@ -383,7 +383,6 @@ nav .links .link:hover a {
     border-radius: 20px;
 }
 .contact h1{
-    /* border:2px solid #fff; */
     width: 100%;
     text-align: right;
     padding-right: 13.5rem;
@@ -406,27 +405,30 @@ nav .links .link:hover a {
 }
 .contactForm{
     width:50%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap:2rem;
+    /* border:2px solid green; */
 }
 .contactForm .inputTags{
     width:70%;
-    height:13%;
+    height:15%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap:1rem;
     background-color: rgba(128, 128, 128, 0.233);
     border-radius: 20px;
+    /* border:2px solid #fff; */
 }
 .contactForm .inputTags i{
     color:#065fed;
     font-weight: 900;
     font-size: 1.2rem;
-
+    /* border:2px solid red; */
 }
 .contactForm .inputTags input{
     background-color: rgba(128, 128, 128, 0);
@@ -434,13 +436,14 @@ nav .links .link:hover a {
     border: none;
     font-size: 1rem;
     letter-spacing: 1.4px;
+    /* border:2px solid yellow; */
 }
 .contactForm .inputTags input:focus{
     outline: none;
 }
 .contactForm textarea{
     width: 70%;
-    height: 35%;
+    height: 45%;
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.233);
     color:#fff;
@@ -449,6 +452,8 @@ nav .links .link:hover a {
     outline: none;
     border: none;
     letter-spacing: 1.4px;
+    /* border:2px solid orange; */
+
 }
 .formBtn{
     border:1px solid #3A81F5;
@@ -469,4 +474,38 @@ nav .links .link:hover a {
     justify-content: center;
     align-items: center;
     gap:7px;
+}
+@media(max-width:480px){
+    .contact h1{
+        padding: 0;
+        text-align: center;
+    }
+    .contact .contactContent{
+        flex-direction: column;
+    }
+    .contact .contactContent .img{
+        width: 100%;
+    }
+    .contactForm{
+        width: 100%;
+        gap:1rem;
+        padding: 1rem;
+    }
+    .contactForm .inputTags{
+        gap:0rem;
+        width:90%;
+        gap:0.5rem;
+        padding: 5px 0px;
+    }
+    .contactForm .inputTags i{
+        font-size: 0.8rem;
+    }
+    .contactForm .inputTags input{
+        font: 0.8rem;
+    }
+    .contactForm textarea{
+        width: 90%;
+        height: 30%;
+        padding: 5px 0px 0px 10px ;
+    }
 }

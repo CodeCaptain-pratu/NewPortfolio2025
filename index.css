@@ -356,6 +356,7 @@ nav .links .link:hover a {
     color: #3A81F5;
     font-size: 1.7rem;
     font-weight: 900;
+    width: 50%;
 }
 .project-card {
     background-color: rgba(255,255,255,0.05);
@@ -373,139 +374,103 @@ nav .links .link:hover a {
     text-decoration: underline;
     font-weight: 700;
 }
-/* contact */
-.contact{
-    border:1px solid #3A81F5;
-    width:75%;
-    height: auto;
-    margin: 1rem auto;
-    padding: 1rem;
+/* CONTACT  */
+.contact {
+    border: 1px solid #3A81F5;
+    width: 75%;
+    margin: 2rem auto;
+    padding: 2rem;
     border-radius: 20px;
 }
-.contact h1{
-    width: 100%;
-    text-align: right;
-    padding-right: 13.5rem;
+.contact h1 {
+    font-size: 2rem;
+    text-align: center;
     margin-bottom: 2rem;
 }
-.contact .contactContent{
+.contactContent {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
-    gap:1rem;
+    align-items: center; 
 }
-.contact .contactContent .img{
-    width: 35%;
-    height: 50%;
-    padding: 1rem;
+.contact .img {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
 }
-.contact .contactContent .img img{
-    width:100%;
-    height: 100%;
+.contact .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
     object-fit: cover;
 }
-.contactForm{
-    width:50%;
-    height: auto;
+.contactForm {
+    flex: 1 1 300px;
+    max-width: 350px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap:2rem;
-    /* border:2px solid green; */
+    gap: 1.5rem;
 }
-.contactForm .inputTags{
-    width:70%;
-    height:15%;
+.inputTags {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap:1rem;
     background-color: rgba(128, 128, 128, 0.233);
+    padding: 0.7rem 1rem;
     border-radius: 20px;
-    /* border:2px solid #fff; */
 }
-.contactForm .inputTags i{
-    color:#065fed;
-    font-weight: 900;
-    font-size: 1.2rem;
-    /* border:2px solid red; */
+.inputTags i {
+    margin-right: 0.5rem;
+    color: #3A81F5;
 }
-.contactForm .inputTags input{
-    background-color: rgba(128, 128, 128, 0);
-    color: #fff;
+.inputTags input {
+    flex: 1;
+    background: transparent;
     border: none;
-    font-size: 1rem;
-    letter-spacing: 1.4px;
-    /* border:2px solid yellow; */
-}
-.contactForm .inputTags input:focus{
-    outline: none;
-}
-.contactForm textarea{
-    width: 70%;
-    height: 45%;
-    border-radius: 20px;
-    background-color: rgba(128, 128, 128, 0.233);
-    color:#fff;
-    padding: 10px 40px;
+    color: inherit;
     font-size: 1rem;
     outline: none;
-    border: none;
-    letter-spacing: 1.4px;
-    /* border:2px solid orange; */
-
 }
-.formBtn{
-    border:1px solid #3A81F5;
-    padding: 0.5rem 1rem;
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.233);
+    color: inherit;
+    font-size: 1rem;
+    border: none;
+    resize: vertical;
+    outline: none;
+}
+.formBtn {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
     border-radius: 100px;
+    border: 1px solid #3A81F5;
+    color: #3A81F5;
+    background: transparent;
     cursor: pointer;
-    color:#3A81F5;
-    transition: 0.3s;
-    font-size: 1.2rem;
-    font-weight: 500;
-    background-color: black;
+    transition: box-shadow 0.3s;
 }
-.formBtn:hover{
-    box-shadow: 0px 0px 10px 0px #3A81F5;
+.formBtn:hover {
+    box-shadow: 0 0 10px #3A81F5;
 }
-.formBtn i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:7px;
-}
-@media(max-width:480px){
-    .contact h1{
-        padding: 0;
-        text-align: center;
-    }
-    .contact .contactContent{
+/* Media queries of contact */
+@media (max-width: 768px) {
+    .contactContent {
         flex-direction: column;
     }
-    .contact .contactContent .img{
+    .contactForm {
         width: 100%;
     }
-    .contactForm{
+    .inputTags,
+    textarea {
         width: 100%;
-        gap:1rem;
-        padding: 1rem;
-    }
-    .contactForm .inputTags{
-        gap:0rem;
-        width:90%;
-        gap:0.5rem;
-        padding: 5px 0px;
-    }
-    .contactForm .inputTags i{
-        font-size: 0.8rem;
-    }
-    .contactForm .inputTags input{
-        font: 0.8rem;
-    }
-    .contactForm textarea{
-        width: 90%;
-        height: 30%;
-        padding: 5px 0px 0px 10px ;
     }
 }

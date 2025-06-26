@@ -52,3 +52,9 @@ links.forEach(link => {
   hamburger.addEventListener("click",()=>{
    socialLinks.classList.toggle('active');
 })
+
+let container=document.querySelector(".container");
+let formInput=document.querySelector(".formInput");
+console.log(container.offsetWidth);
+console.log(formInput.offsetWidth);
+formInput.style.backgroundColor='red';

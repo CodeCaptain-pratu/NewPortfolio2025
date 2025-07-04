@@ -1,7 +1,6 @@
 // Logic for Dark and light theme
 let body=document.querySelector("body");
 let theme=document.querySelector(".theme");
-console.log(theme);
 let dark=true;
 theme.addEventListener("click",()=>{
     if(dark){
@@ -49,12 +48,36 @@ links.forEach(link => {
   // hamburger click event 
   let hamburger=document.querySelector(".hamburger");
   let socialLinks=document.querySelector(".socialLinks");
+  let link=document.querySelector(".socialLinks a");
   hamburger.addEventListener("click",()=>{
    socialLinks.classList.toggle('active');
-})
+  })
 
-let container=document.querySelector(".container");
-let formInput=document.querySelector(".formInput");
-console.log(container.offsetWidth);
-console.log(formInput.offsetWidth);
-formInput.style.backgroundColor='red';
+//Form submission 
+let form = document.querySelector("form");
+// console.log(form);
+form.addEventListener("submit",(e)=>{
+  e.preventDefault();
+  const formData = new FormData(form);
+  console.log(formData);
+  fetch("https://formspree.io/f/mvgrbvaj",{
+    method:"POST",
+    body:formData,
+    headers:{
+      'accept':'application/json',
+    }
+  })
+  .then(response=>{
+    if(response.ok){
+      form.reset();
+      window.location.href="thankyou.html";
+    }
+    else{
+      alert("Form submit again");
+    }
+  })
+  .catch(error=>{
+    console.error("Error Occurred:",error);
+    alert("Something went wrong, Please check your connection and try again"); 
+  })
+})

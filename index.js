@@ -81,3 +81,53 @@ form.addEventListener("submit",(e)=>{
     alert("Something went wrong, Please check your connection and try again"); 
   })
 })
+
+// Project Cards 
+let projectData=[
+  {
+    img:"img/Portfolio.png",
+    name:"Portfolio",
+    projectLink:"project link"
+  },
+   {
+    img:"img/Fit_N_Fine.png",
+    name:"Gym Management",
+    projectLink:"https://getfitanfi9withus.netlify.app/"
+  },
+  {
+    img:"img/EasyLearn.png",
+    name:"EasyLearn",
+    projectLink:"https://educationhouse.netlify.app/"
+  }
+]
+let str="";
+let cardsContainer = document.querySelector(".cardsContainer")
+projectData.forEach((project)=>{
+  str+=`<div class="project-card">
+                <div class="project-img">
+                    <img src="${project.img}" alt="portfolio Image">
+                </div>
+                <div class="project-content">
+                    <div class="top">
+                        <h3>${project.name}</h3>
+                        <a href="${project.projectLink}"><i class="ri-external-link-line"></i></a>
+                    </div>
+                    <div class="techStack">
+                        <div class="stack">
+                            <i class="ri-html5-fill" style="color: orangered;"></i>
+                            <h4>Html</h4>
+                        </div>
+                       <div class="stack">
+                         <i class="ri-css3-fill" style="color: blue;"></i>
+                         <h4>CSS</h4>
+                       </div>
+                       <div class="stack">
+                            <i class="ri-javascript-fill" style="color:yellow"></i>
+                            <h4>Js</h4>
+                       </div>
+                    </div>
+                </div>
+                </div>`;
+
+})
+cardsContainer.innerHTML=str;

@@ -312,7 +312,7 @@ nav .links .link:hover a {
 }
 .socialLinks.active{
     border:1px solid #3A81F5;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(255,255,255,0.05);
     width:30px;
     display: flex;
     justify-content: center;
@@ -378,7 +378,7 @@ nav .links .link:hover a {
     height:350px;
     transition: 0.3s;
     cursor: pointer;
-    background-color: #111;
+    background-color: rgba(255,255,255,0.05);
 }
 .project .project-card .project-img{
     height: 200px;

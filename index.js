@@ -88,17 +88,20 @@ let projectData=[
     img:"img/Portfolio.png",
     name:"Portfolio",
     projectLink:"https://pratikshaport2025.netlify.app/",
+    alt:"Portfolio Image",
     des:"This is my personal portfolio website built using HTML, CSS, and JavaScript. It showcases my technical skills, projects, contact details, and social profiles in a clean and professional layout.",
   },
    {
     img:"img/Fit_N_Fine.png",
     name:"Gym Management",
+    alt:"Gym project UI",
     projectLink:"https://getfitanfi9withus.netlify.app/",
     des:"Get Fit & Fine is a sleek and responsive landing page for a fitness center or gym. I designed and built the complete UI using HTML and CSS, and added interactive elements and basic animations using JavaScript.",
   },
   {
     img:"img/EasyLearn.png",
     name:"EasyLearn",
+    alt:"EasyLearn UI",
     projectLink:"https://educationhouse.netlify.app/",
     des:"Education House is a frontend-based education website designed for learning platforms and coaching institutes. I built the user interface using HTML and CSS, and made it dynamic and interactive using JavaScript.",
   }
@@ -115,7 +118,7 @@ function renderProject(limit){
   projectData.slice(0,limit).forEach((project)=>{
   str+=`<div class="project-card">
                 <div class="project-img">
-                    <img src="${project.img}" alt="portfolio Image">
+                    <img src="${project.img}" alt="${project.alt}">
                 </div>
                 <div class="project-content">
                     <div class="top">

@@ -379,14 +379,14 @@ nav .links .link:hover a {
 .project .project-card{
     border:1px solid #3A81F5;
     border-radius: 20px;
-    width:350px;
-    height:480px;
+    width:380px;
+    height:470px;
     transition: 0.3s;
     cursor: pointer;
     background-color: rgba(255,255,255,0.05);
 }
 .project .project-card .project-img{
-    height: 200px;
+    height: auto;
     /* border:2px solid red; */
 }
 .project .project-card .project-img img{
@@ -458,6 +458,14 @@ nav .links .link:hover a {
     box-shadow: 0 0 10px #3A81F5;
 }
 @media(max-width:480px){
+    .project .project-card .project-img img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        padding: 0.8rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
     .project-card .project-content .description{
         font-size: 0.8rem;
         letter-spacing:0px;

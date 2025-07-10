@@ -380,7 +380,7 @@ nav .links .link:hover a {
     border:1px solid #3A81F5;
     border-radius: 20px;
     width:350px;
-    height:460px;
+    height:480px;
     transition: 0.3s;
     cursor: pointer;
     background-color: rgba(255,255,255,0.05);

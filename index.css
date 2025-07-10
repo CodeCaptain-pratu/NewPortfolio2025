@@ -433,6 +433,11 @@ nav .links .link:hover a {
     padding: 0.5rem 1rem;
     font-weight: 400;
 }
+@media(max-width:480px){
+    .project-card .project-content .description{
+        font-size: 0.8rem;
+    }
+}
 /* CONTACT  */
 .contact {
     border: 1px solid #3A81F5;

@@ -103,9 +103,16 @@ let projectData=[
     des:"Education House is a frontend-based education website designed for learning platforms and coaching institutes. I built the user interface using HTML and CSS, and made it dynamic and interactive using JavaScript.",
   }
 ]
-let str="";
-let cardsContainer = document.querySelector(".cardsContainer")
-projectData.forEach((project)=>{
+
+let cardsContainer = document.querySelector(".cardsContainer");
+let viewMoreBtn=document.createElement("button");
+viewMoreBtn.innerText="View More";
+viewMoreBtn.className="view-more-btn";
+cardsContainer.after(viewMoreBtn);
+
+function renderProject(limit){
+  let str="";
+  projectData.slice(0,limit).forEach((project)=>{
   str+=`<div class="project-card">
                 <div class="project-img">
                     <img src="${project.img}" alt="portfolio Image">
@@ -136,4 +143,17 @@ projectData.forEach((project)=>{
                 </div>`;
 
 })
-cardsContainer.innerHTML=str;
+  cardsContainer.innerHTML=str;
+}
+renderProject(2);
+let isExpanded=false;
+viewMoreBtn.addEventListener("click",()=>{
+  if(isExpanded){
+    renderProject(2);
+    viewMoreBtn.innerText="View More";
+  }else{
+    renderProject(projectData.length);
+    viewMoreBtn.innerText="View Less";
+  }
+  isExpanded=!isExpanded;
+})

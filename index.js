@@ -87,17 +87,20 @@ let projectData=[
   {
     img:"img/Portfolio.png",
     name:"Portfolio",
-    projectLink:"project link"
+    projectLink:"https://pratikshaport2025.netlify.app/",
+    des:"This is my personal portfolio website built using HTML, CSS, and JavaScript. It showcases my technical skills, projects, contact details, and social profiles in a clean and professional layout.",
   },
    {
     img:"img/Fit_N_Fine.png",
     name:"Gym Management",
-    projectLink:"https://getfitanfi9withus.netlify.app/"
+    projectLink:"https://getfitanfi9withus.netlify.app/",
+    des:"Get Fit & Fine is a sleek and responsive landing page for a fitness center or gym. I designed and built the complete UI using HTML and CSS, and added interactive elements and basic animations using JavaScript.",
   },
   {
     img:"img/EasyLearn.png",
     name:"EasyLearn",
-    projectLink:"https://educationhouse.netlify.app/"
+    projectLink:"https://educationhouse.netlify.app/",
+    des:"Education House is a frontend-based education website designed for learning platforms and coaching institutes. I built the user interface using HTML and CSS, and made it dynamic and interactive using JavaScript.",
   }
 ]
 let str="";
@@ -125,6 +128,9 @@ projectData.forEach((project)=>{
                             <i class="ri-javascript-fill" style="color:yellow"></i>
                             <h4>Js</h4>
                        </div>
+                    </div>
+                    <div class="description">
+                          <p>${project.des}</p>
                     </div>
                 </div>
                 </div>`;

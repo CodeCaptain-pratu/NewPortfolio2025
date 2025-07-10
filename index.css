@@ -356,7 +356,6 @@ nav .links .link:hover a {
     margin-top: 2rem;
 }
 .project h1 {
-    color: #3A81F5;
     font-size: 2rem;
     font-weight: 900;
     width: 100%;
@@ -375,7 +374,7 @@ nav .links .link:hover a {
     border:1px solid #3A81F5;
     border-radius: 20px;
     width:350px;
-    height:350px;
+    height:450px;
     transition: 0.3s;
     cursor: pointer;
     background-color: rgba(255,255,255,0.05);
@@ -428,6 +427,11 @@ nav .links .link:hover a {
 }
 .stack i{
     font-size: 1rem;
+}
+.project-card .project-content .description{
+    /* border:2px solid red; */
+    padding: 0.5rem 1rem;
+    font-weight: 400;
 }
 /* CONTACT  */
 .contact {

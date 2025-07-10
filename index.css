@@ -380,7 +380,7 @@ nav .links .link:hover a {
     border:1px solid #3A81F5;
     border-radius: 20px;
     width:350px;
-    height:450px;
+    height:460px;
     transition: 0.3s;
     cursor: pointer;
     background-color: rgba(255,255,255,0.05);
@@ -438,6 +438,9 @@ nav .links .link:hover a {
     /* border:2px solid red; */
     padding: 0.5rem 1rem;
     font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing:0.8px;
+    font-size: 0.9rem;
 }
 .project .view-more-btn{
     /* background-color: #3A81F5; */
@@ -457,6 +460,7 @@ nav .links .link:hover a {
 @media(max-width:480px){
     .project-card .project-content .description{
         font-size: 0.8rem;
+        letter-spacing:0px;
     }
 }
 /* CONTACT  */

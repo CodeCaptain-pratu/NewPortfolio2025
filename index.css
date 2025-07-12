@@ -65,7 +65,7 @@ nav .name span{
     /* border:2px solid yellow;  */
 }
 nav .links {
-  width: 70%;
+  min-width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,6 @@ nav .links .link:hover a {
   }
   nav .links .link {
     padding: 6px;
-    text-align: center;
   }
   nav .links .link a{
     display: flex;
@@ -121,7 +120,7 @@ nav .links .link:hover a {
     font-size: 0;
   }
 }
-@media (max-width: 768px) {
+@media (min-width:481px) and (max-width: 768px) {
   nav {
     gap: 0.5rem;
     padding: 0 10px;
@@ -134,34 +133,39 @@ nav .links .link:hover a {
     justify-content: center;
     align-items: center;
   }
+  nav .links .link a i{
+    font-size: 1.2rem;
+  }
   nav .links .link a span{
     font-size: 0;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width:769px) and (max-width: 1024px) {
   nav {
     gap: 0.5rem;
     padding: 0 10px;
-    /* border:2px solid white; */
   }
-  nav .links {
-    gap: 1.5rem;
-    /* border:2px solid red; */
+  nav .name span{
+    font-size: 1.5rem;
   }
   nav .links .link {
     padding: 8px;
     text-align: center;
-    /* border:2px solid blue; */
   }
   nav .links .link a {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border:2px solid yellow; */
+  }
+   nav .links .link a i{
+    font-size: 1.5rem;
   }
   nav .links .link a span {
     font-size: 0; /* Hide the text */
+  }
+  nav .icons .theme{
+    font-size: 1.3rem;
   }
 }
 

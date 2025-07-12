@@ -109,8 +109,13 @@ nav .links .link:hover a {
     gap: 0.5rem;
   }
   nav .links .link {
-    padding: 8px;
+    padding: 6px;
     text-align: center;
+  }
+  nav .links .link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   nav .links .link a span{
     font-size: 0;
@@ -124,12 +129,42 @@ nav .links .link:hover a {
   nav .links {
     gap: 1rem;
   }
+  nav .links .link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   nav .links .link a span{
     font-size: 0;
   }
 }
-@media (max-width:1024px){
+@media (max-width: 1024px) {
+  nav {
+    gap: 0.5rem;
+    padding: 0 10px;
+    /* border:2px solid white; */
+  }
+  nav .links {
+    gap: 1.5rem;
+    /* border:2px solid red; */
+  }
+  nav .links .link {
+    padding: 8px;
+    text-align: center;
+    /* border:2px solid blue; */
+  }
+  nav .links .link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border:2px solid yellow; */
+  }
+  nav .links .link a span {
+    font-size: 0; /* Hide the text */
+  }
 }
+
 /* main section */
 .intro{
     /* border:2px solid red; */
